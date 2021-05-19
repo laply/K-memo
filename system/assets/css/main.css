@@ -1,0 +1,99 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto';
+    background-color: #F4F9FD;
+}
+
+body {
+    height: 95%;
+}
+
+input,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 10px;
+    margin: 5px
+}
+
+#main-name {
+    font-weight: 800;
+    font-size: 50px;
+    margin: 20px;
+}
+
+#file-name {
+    margin: 10px 0px;
+}
+
+#main-element {
+    width: 100%;
+    height: 70%;
+}
+
+#main-textboard-div {
+    width: 60%;
+    height: 100%;
+    margin: 10px;
+    float: left;
+}
+
+#main-textboard {
+    width: 100%;
+    height: 100%;
+}
+
+#content-list {
+    margin-left: 20px;
+    height: 80%;
+    width: 700px;
+    float: left;
+}
+
+.content-text {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.content-text p {
+    font-size: 30px;
+    float: left;
+}
+
+#log-date {
+    float: right;
+}
+
+.content-log {
+    border-radius: 5px;
+    height: 90%;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.file-list {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.file-name-list {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    float: left;
+}
+
+.file-time-list {
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    font-weight: 600;
+}
