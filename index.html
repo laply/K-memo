@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="utf-8">
     <title>K-memo</title>
     <link rel="stylesheet" href="./system/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./system/assets/css/main.css">
 
     <script src="./system/js/bootstrap.min.js"></script>
-    <script src="./system/js/main.js"></script>
+    <script defer src="./system/js/db.js"></script>
+    <script defer src="./system/js/main.js"></script>
 
 </head>
 
@@ -15,8 +17,10 @@
 
     <div id="main-element">
         <div id="main-textboard-div">
-            <input type="text" name="file-name" id="file-name" placeholder="파일 이름">
-
+            <div>
+                <input type="text" name="file-name" id="file-name" placeholder="파일 이름">
+                <div id="time"></div>
+            </div>
             <textarea id="main-textboard" name="box"></textarea>
         </div>
         <div id="content-list">
@@ -25,14 +29,13 @@
                 <input type="date" id="log-date">
             </div>
             <div class="content-log" id="data-log-body">
-                <div class="file-list">
-                    <div class="file-name-list">name</div>
-                    <div class="file-time-list">time</div>
-                </div>
-                <div class="file-list">
-                    <div class="file-name-list">name</div>
-                    <div class="file-time-list">time</div>
-                </div>
+            </div>
+            <div id="button-div">
+                <div class="buttons" id="save-button">Save</div>
+                <div class="buttons" id="load-button">Load</div>
+                <div class="buttons" id="delete-button">Delete</div>
+                <div class="buttons" id="download-button">Download</div>
+
             </div>
         </div>
 

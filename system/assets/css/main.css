@@ -6,7 +6,7 @@ body {
 }
 
 body {
-    height: 95%;
+    margin: 0 auto;
 }
 
 input,
@@ -24,8 +24,12 @@ textarea {
     margin: 20px;
 }
 
-#file-name {
-    margin: 10px 0px;
+#file-name{
+    float: left;
+}
+#time {
+    padding: 10px 0px;
+    float: right;
 }
 
 #main-element {
@@ -34,7 +38,7 @@ textarea {
 }
 
 #main-textboard-div {
-    width: 60%;
+    width: 50%;
     height: 100%;
     margin: 10px;
     float: left;
@@ -48,12 +52,12 @@ textarea {
 #content-list {
     margin-left: 20px;
     height: 80%;
-    width: 700px;
+    width: 40%;
     float: left;
 }
 
 .content-text {
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 10px;
 }
 
@@ -96,4 +100,29 @@ textarea {
     float: right;
     font-size: 20px;
     font-weight: 600;
+}
+
+
+
+#button-div {
+    height: 30%;
+    width: 100%;
+    background-color: #bdbdbd;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 30px 40px;
+
+}
+
+.buttons{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 7px;
+    float: left;
 }
