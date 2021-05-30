@@ -17,14 +17,12 @@
                 print_r($row);
                 echo '<br>';
             }
+        } else {
+            echo 'saved';
         }
     } else {
         echo "error ".mysqli_connect_errno()." \n";
     }
 
     mysqli_close($conn);
-?>
-
-
-
 ?>
