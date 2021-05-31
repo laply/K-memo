@@ -24,6 +24,13 @@ const downloadFile = function(){
     // }
 }
 
+const deleteData = function(){
+    if (confirm("정말로 삭제 하시겠습니까?")){
+        new KPHP().phpData(`system/php/db.php?query=DELETE FROM file WHERE id=${fileIdList[lastChoiceData].id};&do=set`, (returnData2) => {})
+        document.getElementById("file-" + fileIdList[lastChoiceData].id).remove()
+        lastChoiceData = ""
+    }
+}
 
 const loadFileData = function(){
     let thisData = document.getElementById("main-textboard").value
@@ -79,7 +86,6 @@ const dataChoice = function(data){
 
     lastChoiceData = data.path[0].id
     document.getElementById(data.path[0].id).style.backgroundColor = "#bdccbd"
-
 }
 
 let fileIdList = {}
